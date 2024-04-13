@@ -1,52 +1,83 @@
-*{
+
+  
+@media screen and (max-width: 576px) {
+    .container-1 {
+      width: 80%;
+      padding: 10px;
+
+    }
+  
+    .label-input{
+        display: flex;
+        gap: px;
+        background-color: re;
+        justify-content: space-between;
+        color: #555;
+        gap: 5px;
+        margin-right: 15px;
+        padding: 10px;
+        flex: wrap;
+  }
+  
+  
+} */
+
+
+
+* {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-.container{
+  }
+  
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-.container-1{
-background: linear-gradient(90deg, rgb(145, 142, 208) 0%, rgb(131, 131, 212) 35%, rgba(0, 212, 255, 1) 100%);
-;
-width: 450px;
-padding: 20px 50px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-color: white;
-border-radius: 15px;
-
-}
-.input-field{
-
+  }
+  
+  .container-1 {
+    background: linear-gradient(90deg, rgb(145, 142, 208) 0%, rgb(131, 131, 212) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 50%; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .input-field {
     border-radius: 5px;
     height: 40px;
     outline: none;
     border: none;
     font-size: 20px;
     padding: 8px;
-}
-.label-input{
+    width: 70%; 
+  }
+  
+  .label-input {
     display: flex;
-    gap: px;
-    background-color: re;
-    justify-content: space-between;
-    color: #555;
     gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
     margin-right: 15px;
     padding: 10px;
-    
-}.label-input input {
-
+    flex-wrap: wrap; 
+  }
+  
+  .label-input input {
     border-radius: 50px;
-}
-.label-input button{
+    width: 70%; 
+    padding-left: 10px;
+  }
+  
+  .label-input button {
     padding: 10px;
     border-radius: 50%;
     border: none;
@@ -55,73 +86,76 @@ border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.search{
-
+  }
+  
+  .search {
     height: 25px;
-}
-.weather{
+  }
+  
+  .weather {
     display: flex;
     flex-direction: column;
     align-items: center;
     display: none;
-}
-.weather-image{
+  }
+  
+  .weather-image {
     width: 170px;
-}
-.weather h1{
+  }
+  
+  .weather h1 {
     font-size: 80px;
     font-weight: 500;
-}
-.weather h2{
+  }
+  
+  .weather h2 {
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
-}
-.details {
+  }
+  
+  .details {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 50px; 
     padding: 0 20px;
     margin-top: 50px;
-
-}
-.col{
+  }
+  
+  .col {
     display: flex;
-    
     align-items: center;
     gap: 10px;
-
-}
-.col img{
-
+  }
+  
+  .col img {
     width: 40px;
-}
-.humidity-wind {
+  }
+  
+  .humidity-wind {
     display: flex;
     flex-direction: column;
     align-items: center;
-    white-space: nowrap;
-
-}
-
-.humidity , .wind{
-    font-size: 28px
-}
-.invalid{
-    display: flex ;
-    justify-content: start;
-    font-size: large;
-    margin-left: -100px;
-    padding-top: 10px;
+  }
+  
+  .humidity, .wind {
+    font-size: 28px;
+  }
+  
+  .invalid {
     display: none;
-}
-.copyright{
-
+    justify-content: center;
+    font-size: large;
+    padding-top: 10px;
+    margin-top: 10px; 
+  }
+  
+  .copyright {
     color: black;
     margin-top: 40px;
-}
+  }
+  
   @keyframes fade-in {
     from {
       opacity: 0;
@@ -131,8 +165,43 @@ border-radius: 15px;
     }
   }
   
-  .weather, .invalid {
+  .weather,
+  .invalid {
     animation: fade-in 2s ease forwards;
   }
   
+  @media screen and (max-width: 576px) {
+    .container-1 {
+      width: 80%;
+      padding: 10px;
+    }
+  
+    .label-input {
+      flex-direction: column; 
+    }
+  
+    .label-input input {
+      width: 100%;
+    }
+  
+    .details {
+      flex-direction: column; 
+      gap: 20px; 
+      
+    }
+  
+    .col {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .humidity-wind {
+      flex-direction: row; 
+      gap: 10px; 
+    }
+  
+    .invalid {
+      margin-left: 0; 
+    }
+  }
   
